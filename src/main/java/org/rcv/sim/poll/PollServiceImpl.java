@@ -14,13 +14,12 @@ public class PollServiceImpl implements PollService {
 
     @Override
     public Poll loadPoll(String id) {
-        //TODO donald
-        throw new RuntimeException("not implemented");
+        return pollRepo.findById(id);
     }
 
     @Override
     public void createPoll(Poll.DTO input) {
-        //TODO donald - do this one last
+        //TODO
         throw new RuntimeException("not implemented");
     }
 }
