@@ -32,10 +32,9 @@ public class PollNode implements Poll {
     @Relationship
     Set<CandidateNode> candidates = new HashSet<>();
 
-
-
-    public PollNode(String name) {
+    public PollNode(String id, String name) {
         this.name = name;
+        this.id = id;
     }
 
 

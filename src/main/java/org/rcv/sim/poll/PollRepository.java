@@ -5,7 +5,11 @@ import org.springframework.data.neo4j.repository.GraphRepository;
 import org.springframework.stereotype.Repository;
 
 /**
+ * Repositories are concerned with persistence - loading and saving things
+ * Note that we don't actually have to implement this: Because it extends GraphRepository, Spring creates a dynamic
+ * "proxy" class that implements it for us.
  *
+ * http://docs.spring.io/spring-data/data-neo4j/docs/4.1.1.RELEASE/reference/html/#reference_programming-model_repositories
  */
 @Repository
 public interface PollRepository extends GraphRepository<PollNode> {
