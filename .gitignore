@@ -3,3 +3,4 @@
 mvnw
 .mvn
 *.cmd
+src/main/resources/static
