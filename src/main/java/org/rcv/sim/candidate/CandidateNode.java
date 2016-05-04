@@ -11,7 +11,12 @@ public class CandidateNode implements Candidate {
 
     //TODO add fields (which get persisted as properties on the node )
 
-
+    public CandidateNode(String id, String name,String photo, Integer votes) {
+        this.name = name;
+        this.id = id;
+        this.photo = photo;
+        this.votes = votes;
+    }
 
 
      // sdn boilerplate
@@ -21,18 +26,26 @@ public class CandidateNode implements Candidate {
     @Override
     public String getId() {
         //TODO
-        throw new RuntimeException("not implemented");
+        return this.id;
+        //throw new RuntimeException("not implemented");
     }
 
     @Override
     public String getName() {
         //TODO
-        throw new RuntimeException("not implemented");
+        return this.name;
+       // throw new RuntimeException("not implemented");
     }
 
     @Override
     public String getPhoto() {
+        return this.photo;
         //TODO
         throw new RuntimeException("not implemented");
+    }
+
+    @Override
+    public Integer getVoteCount{
+        return this.votes;
     }
 }

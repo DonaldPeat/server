@@ -9,6 +9,7 @@ public interface Candidate {
     String getId();
     String getName();
     String getPhoto();
+    Integer getVoteCount();
 
     class DTO {
         @JsonProperty
@@ -19,6 +20,9 @@ public interface Candidate {
 
         @JsonProperty
         String photo;
+
+        @JsonProperty
+        Integer votes;
     }
 
 
