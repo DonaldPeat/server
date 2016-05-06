@@ -15,7 +15,7 @@ public class CandidateNode implements Candidate {
         this.photo = photo;
         this.votes = votes;
     }
-    
+
     private CandidateNode(){}
     @GraphId private Long neo4jPrivateId;
 
@@ -33,7 +33,7 @@ public class CandidateNode implements Candidate {
 
     @Override
     public String getPhoto() {
-        return this.photo;d
+        return this.photo;
         //throw new RuntimeException("not implemented");
     }
 
