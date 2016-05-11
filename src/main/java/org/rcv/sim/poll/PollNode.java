@@ -54,7 +54,7 @@ public class PollNode implements Poll {
 
     @Override
     public Collection<CandidateNode> getCandidates() {
-        //TODO donald: super straight-forward
+        return candidates;   //TODO donald: super straight-forward
         throw new RuntimeException("not implemented");
     }
 

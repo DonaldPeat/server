@@ -38,6 +38,15 @@ public class PollController {
         return pollService.loadPoll(pollId);
     }
 
+    @RequestMapping("/deleteme")
+    public void createDummyData(){
+      //  ObjectMapper objectMapper = new ObjectMapper();
+       // List<Vote> votes = objectMapper.readValue(
+       //         jsonString,)
 
+        //logicz
+
+
+    }
 
 }

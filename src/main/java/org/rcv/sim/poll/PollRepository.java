@@ -20,7 +20,7 @@ public interface PollRepository extends GraphRepository<PollNode> {
 
     @Query(" MATCH (poll:poll)<-[:CAST_IN]-(vote:vote)-[:CAST_TO]->(cand:candidate) " +
            " WHERE poll.id = {0} " +
-           " RETURN poll, COLLECT(vote) AS votes, COLLECT(cand) AS candidates")
+           " RETURN poll, COLLECT(vote) AS votes, COLLECT(cand) AS candidates")//return result of reducer function instead of entire objects peep cypher handbook
     PollQueryResult fetch(String  id);
 
 

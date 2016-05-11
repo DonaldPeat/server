@@ -14,7 +14,7 @@ public class PollServiceImpl implements PollService {
 
     @Override
     public Poll loadPoll(String id) {
-        return pollRepo.findById(id);
+        return pollRepo.fetch(id);
     }
 
     @Override
